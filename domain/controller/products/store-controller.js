@@ -19,7 +19,7 @@ function storeProduct(event) {
 
     services.storeProduct(product)
     .then((respuesta) => {
-        window.location.href = config.app_url + '/pages/products.index.html';
+        window.location.href = config.front_url + '/pages/products.index.html';
     }).catch(error => {
         alert(error)
     }); 
@@ -27,6 +27,5 @@ function storeProduct(event) {
 }
 
 if(!localStorage.getItem('jr_authenticated')) {
-    window.location.href = config.app_url + '/pages/login.html';
-    return;
+    window.location.href = config.front_url + '/pages/login.html';
 }

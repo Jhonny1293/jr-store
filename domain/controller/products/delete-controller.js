@@ -8,7 +8,7 @@ export function deleteProduct(id) {
 
     services.deleteProduct(id)
     .then((respuesta) => {
-        window.location.href = '../../../pages/products.index.html';
+        window.location.href = config.front_url + '/pages/products.index.html';
     }).catch(error => {
         alert(error)
     }); 
@@ -16,6 +16,5 @@ export function deleteProduct(id) {
 }
 
 if(!localStorage.getItem('jr_authenticated')) {
-    window.location.href = config.app_url + '/pages/login.html';
-    return;
+    window.location.href = config.front_url + '/pages/login.html';
 }

@@ -76,6 +76,5 @@ async function refreshProduct() {
 
 refreshProduct();
 if(!localStorage.getItem('jr_authenticated')) {
-    window.location.href = config.app_url + '/pages/login.html';
-    return;
+    window.location.href = config.front_url + '/pages/login.html';
 }
