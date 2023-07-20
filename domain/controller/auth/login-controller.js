@@ -1,8 +1,13 @@
 import config from '../../config.js';
 
+const formulario = document.querySelector("[login-form]");
+formulario.addEventListener("submit", (eventoSubmit) => {
+    eventoSubmit.preventDefault();
+    login(eventoSubmit);
+});
+
 function login(event) 
 {
-   event.preventDefault();
    const email = document.getElementById('input__email').value;
    const password = document.getElementById('input__password').value;
 
