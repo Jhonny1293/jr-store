@@ -1,0 +1,29 @@
+{
+  "products": [
+    {
+      "name": "Play Station 5",
+      "imagenURL": "https://exitocol.vtexassets.com/arquivos/ids/9154827-800-auto?v=637631028231230000&width=800&height=auto&aspect=true",
+      "price": "3000000",
+      "id": 1,
+      "reference": "#CO001",
+      "category": "consoles"
+    },
+    {
+      "name": "Zelda",
+      "imagenURL": "https://m.media-amazon.com/images/I/91O9Uk5oWAL._AC_UF894,1000_QL80_.jpg",
+      "price": "250000",
+      "id": 2,
+      "reference": "#GM001",
+      "category": "games"
+    },
+    {
+      "id": 4,
+      "imagenURL": "https://www.primecomics.com.co/images/feature_variant/3/pikachu.jpg",
+      "category": "consoles",
+      "name": "Imagen de pikachu FullHD",
+      "description": "Es una imagen de pikachu muy bonita",
+      "price": "1500",
+      "reference": "#va030"
+    }
+  ]
+}
