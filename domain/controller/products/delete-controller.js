@@ -14,3 +14,8 @@ export function deleteProduct(id) {
     }); 
 
 }
+
+if(!localStorage.getItem('jr_authenticated')) {
+    window.location.href = config.app_url + '/pages/login.html';
+    return;
+}

@@ -11,9 +11,9 @@ function login(event)
    }
 
    localStorage.setItem('jr_authenticated', true);
-   window.location.href = '../../pages/products.index.html';
+   window.location.href = config.app_url + '/pages/products.index.html';
 }
 
 if(localStorage.getItem('jr_authenticated')) {
-    window.location.href = '../../pages/products.index.html';
+    window.location.href = config.app_url + 'pages/products.index.html';
 }

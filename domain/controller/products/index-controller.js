@@ -31,7 +31,7 @@ const buildProductCard = ({name, imagenURL, price, id, reference, category}) => 
 async function indexProducts() 
 {
     if(!localStorage.getItem('jr_authenticated')) {
-        window.location.href = '../../../pages/login.html';
+        window.location.href = config.app_url + '/pages/login.html';
         return;
     }
 
