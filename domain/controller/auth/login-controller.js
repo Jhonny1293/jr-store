@@ -22,5 +22,5 @@ function login(event)
 }
 
 if(localStorage.getItem('jr_authenticated')) {
-    window.location.href = config.front_url + 'pages/products.index.html';
+    window.location.href = config.front_url + '/pages/products.index.html';
 }
