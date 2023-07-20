@@ -18,7 +18,7 @@ function updateProduct(event) {
 
     services.updateProduct(product)
     .then((respuesta) => {
-        window.location.href = config.app_url + '/pages/products.index.html';
+        window.location.href = config.front_url + '/pages/products.index.html';
     }).catch(error => {
         alert(error)
     }); 
