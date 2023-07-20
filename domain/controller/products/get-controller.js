@@ -5,13 +5,13 @@ export function getProduct() {
     const id = (url.searchParams.get("id"));
     
     if(id === null){
-        window.location.href = '../../../pages/products.index.html'
+        window.location.href = config.front_url + '/pages/products.index.html'
     }
     
     return services.getProduct(id)
     .then((respuesta) => {
         return respuesta;
     }).catch(error => {
-        window.location.href = '../../../pages/products.index.html'
+        window.location.href = config.front_url + '/pages/products.index.html'
     });     
 }

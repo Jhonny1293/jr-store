@@ -42,11 +42,11 @@
             <form method="post" class="contact__form admin__form" form-product>
                 <div class="contact__name__content">
                     <label class="contact__name__title" for="products_url">URL de la imagen</label>
-                    <input class="contact__name" type="text" required id="products_url">
+                    <input  minlength="4" maxlength="255" required class="contact__name" type="text" required id="products_url">
                 </div>
                 <div class="contact__name__content">
                     <label class="contact__name__title" for="products_category">Categoría</label>
-                    <select class="contact__name" id="products_category">
+                    <select required class="contact__name" id="products_category">
                         <option value="" default disabled>Selecciona una opción</option>
                         <option value="consoles">Consolas</option>
                         <option value="star-wars">Star wars</option>
@@ -56,17 +56,17 @@
                 </div>
                 <div class="contact__name__content">
                     <label class="contact__name__title" for="products_name">Nombre del producto</label>
-                    <input class="contact__name" type="text" id="products_name">
+                    <input minlength="4" maxlength="50" required class="contact__name" type="text" id="products_name">
                 </div>
                 <div class="contact__name__content">
                     <label class="contact__name__title" for="products_reference">Referencia del producto</label>
-                    <input class="contact__name" type="text" id="products_reference">
+                    <input minlength="4" maxlength="30" required class="contact__name" type="text" id="products_reference">
                 </div>
                 <div class="contact__name__content">
                     <label class="contact__name__title" for="products_price">Precio del producto</label>
-                    <input class="contact__name" type="text" id="products_price">
+                    <input required class="contact__name" type="number" id="products_price">
                 </div>
-                <input class="contact__message description__producto__admin" type="text" id="products_description" placeholder="Descripción del producto">
+                <textarea minlength="4" maxlength="255" required class="contact__message description__producto__admin" type="text" id="products_description" placeholder="Descripción del producto"></textarea>
                 <div>
                     <input type="submit" class="btn button__contact button__admin" name="button__banner"></input>
                 </div>

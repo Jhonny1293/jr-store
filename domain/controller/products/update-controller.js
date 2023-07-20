@@ -17,7 +17,7 @@ function updateProduct(event) {
 
     services.updateProduct(product)
     .then((respuesta) => {
-        window.location.href = '../../../pages/products.index.html';
+        window.location.href = config.app_url + '/pages/products.index.html';
     }).catch(error => {
         alert(error)
     }); 
@@ -34,11 +34,11 @@ async function refreshProduct() {
         <form method="post" class="contact__form admin__form" form-product>
             <div class="contact__name__content">
                 <label class="contact__name__title" for="products_url">URL de la imagen</label>
-                <input class="contact__name" type="text" value="${product.imagenURL}" required id="products_url">
+                <input class="contact__name" minlength="4" maxlength="255" required type="text" value="${product.imagenURL}" required id="products_url">
             </div>
             <div class="contact__name__content">
                 <label class="contact__name__title" for="products_category">Categoría</label>
-                <select value="${product.category}" class="contact__name" id="products_category">
+                <select required value="${product.category}" class="contact__name" id="products_category">
                     <option value="" default disabled>Selecciona una opción</option>
                     <option value="consoles">Consolas</option>
                     <option value="star-wars">Star wars</option>
@@ -48,17 +48,17 @@ async function refreshProduct() {
             </div>
             <div class="contact__name__content">
                 <label class="contact__name__title" for="products_name">Nombre del producto</label>
-                <input class="contact__name" type="text" value="${product.name}" id="products_name">
+                <input minlength="4" maxlength="50" required class="contact__name" type="text" value="${product.name}" id="products_name">
             </div>
             <div class="contact__name__content">
                 <label class="contact__name__title" for="products_reference">Referencia del producto</label>
-                <input class="contact__name" type="text" value="${product.reference}" id="products_reference">
+                <input minlength="4" maxlength="30" required class="contact__name" type="text" value="${product.reference}" id="products_reference">
             </div>
             <div class="contact__name__content">
                 <label class="contact__name__title" for="products_price">Precio del producto</label>
-                <input class="contact__name" type="text" id="products_price" value="${product.price}">
+                <input required class="contact__name" type="number" id="products_price" value="${product.price}">
             </div>
-            <textarea class="contact__message description__producto__admin" type="text" id="products_description" placeholder="Descripción del producto">${product.description}</textarea>
+            <textarea minlength="4" maxlength="255" required class="contact__message description__producto__admin" type="text" id="products_description" placeholder="Descripción del producto">${product.description}</textarea>
             <div>
                 <input type="submit" class="btn button__contact button__admin" name="button__banner"></input>
             </div>
@@ -75,3 +75,6 @@ async function refreshProduct() {
 }
 
 refreshProduct();
+if(!localStorage.getItem('jr_authenticated')) {
+    window.location.href = config.front_url + '/pages/login.html';
+}
