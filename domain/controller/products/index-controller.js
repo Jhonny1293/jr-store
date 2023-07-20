@@ -2,6 +2,7 @@ import services from "../../services/products-services.js";
 import {deleteProduct} from "./delete-controller.js";
 import { formatPrice } from "../../helpers/currency.js";
 import CATEGORIES from "../../constants/categories.js";
+import config from '../../config.js';
 
 const buildProductCard = ({name, imagenURL, price, id, reference, category}) => {
     const card = document.createElement("div")

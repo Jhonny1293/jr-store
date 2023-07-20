@@ -1,5 +1,6 @@
 import services from "../../services/products-services.js";
 import {getProduct} from "./get-controller.js";
+import config from '../../config.js';
 
 function updateProduct(event) {
     const url = new URL(window.location);

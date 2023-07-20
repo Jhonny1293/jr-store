@@ -1,4 +1,5 @@
 import services from "../../services/products-services.js";
+import config from '../../config.js';
 
 export function deleteProduct(id) {
     if(!id){
