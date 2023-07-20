@@ -11,7 +11,7 @@ const buildProductCard = ({name, imagenURL, price, id, reference, category}) => 
                         <img class="products__img" src="${imagenURL}"/>
                         <div class="products__tools__icons">
                             <span class="products__category__item">${CATEGORIES[category] ?? 'Otro'}</span>
-                            <a class="button__tools__icons" href="/pages/products.edit.html?id=${id}"><em class="fas fa-pen"></em></a>
+                            <a class="button__tools__icons" href="./products.edit.html?id=${id}"><em class="fas fa-pen"></em></a>
                             <button  class="button__tools__icons" delete-product-${id}><em class="fas fa-trash-alt"></em></button>
                         </div>
                     </div>
@@ -31,7 +31,7 @@ const buildProductCard = ({name, imagenURL, price, id, reference, category}) => 
 async function indexProducts() 
 {
     if(!localStorage.getItem('jr_authenticated')) {
-        window.location.href = '/pages/login.html';
+        window.location.href = '../../../pages/login.html';
         return;
     }
 

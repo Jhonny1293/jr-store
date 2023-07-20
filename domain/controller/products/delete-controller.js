@@ -8,7 +8,7 @@ export function deleteProduct(id) {
 
     services.deleteProduct(id)
     .then((respuesta) => {
-        window.location.href = '/pages/products.index.html';
+        window.location.href = '../../../pages/products.index.html';
     }).catch(error => {
         alert(error)
     }); 
