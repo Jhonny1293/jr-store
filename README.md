@@ -1,8 +1,6 @@
-# E-commerce JR-Store
+# JR-Store
 
 _Este repositorio tiene como finalidad dar solución al reto propuesto por el curso de Frontend de Alura_
-
----
 
 ## Herramientas, Lenguajes y Estilos
 
@@ -17,5 +15,11 @@ JR store es una tienda de comics, videos juegos y consolas, amigable con el clie
 * correo: admin@admin.com
 * password: jrstore
 
+
+
+## Endpoints
+
+* API: https://fuzzy-coveralls-cow.cyclic.app/
+* Front: https://jhonny1293.github.io/jr-store
 
 ## Muchas Gracias!
