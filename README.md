@@ -19,7 +19,7 @@ JR store es una tienda de comics, videos juegos y consolas, amigable con el clie
 
 ## Endpoints
 
-* API: https://fuzzy-coveralls-cow.cyclic.app/
+* API: https://jr-store.onrender.com/
 * Front: https://jhonny1293.github.io/jr-store
 
 ## Muchas Gracias!

@@ -1,3 +1,3 @@
 export default {
-    app_url: 'https://fuzzy-coveralls-cow.cyclic.app'
+    app_url: 'https://jr-store.onrender.com'
 }
