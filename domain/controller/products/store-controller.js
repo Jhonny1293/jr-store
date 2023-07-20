@@ -1,5 +1,5 @@
 import services from "../../services/products-services.js";
-
+import config from '../../config.js';
 
 const formulario = document.querySelector("[form-product]");
 formulario.addEventListener("submit", (eventoSubmit) => {
