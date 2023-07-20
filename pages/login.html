@@ -36,7 +36,7 @@
     <main>
         <div class="loging">
             <h3 class="loging__title">Iniciar Sesión</h3>
-            <form action="" method="post" onsubmit="login(event)" class="loging__form">
+            <form action="" method="post" class="loging__form" login-form>
                 <input class="loging__email" minlength="4" maxlength="255" type="email" name="input__email" id="input__email" required placeholder="Escriba su correo electrónico">
                 <input class="loging__password" minlength="4" maxlength="255" type="password" name="input__password" id="input__password" required placeholder="Escriba su contraseña">
                 <span class="loging__error" input-error></span>
@@ -76,6 +76,6 @@
         <p class="footer__owner">Desarrollado por Jhonatan Restrepo Montoya</p>
         <span class="year">2023</span>
     </footer>
-    <script src="../domain/controller/auth/login-controller.js"></script>
+    <script type="module" src="../domain/controller/auth/login-controller.js"></script>
 </body>
 </html>
