@@ -18,7 +18,7 @@
     },
     {
       "name": "Nintendo DS Lite",
-      "imagenURL": "https://static.wikia.nocookie.net/nintendods/images/c/c1/Nintendo_DS_Lite.png/revision/latest?cb=20081006170425&path-prefix=es",
+      "imagenURL": "https://www.nintenderos.com/wp-content/uploads/2011/06/Nintendo-DS-Lite.jpg",
       "price": "1800000",
       "id": 3,
       "reference": "#CO003",
@@ -59,7 +59,7 @@
     },
     {
       "name": "Super Mario Bros",
-      "imagenURL": "https://static.wikia.nocookie.net/mario/images/e/e0/30287-super-mario-bros-nes-front-cover.jpg/revision/latest?cb=20180422054516&path-prefix=es",
+      "imagenURL": "https://www.sams.com.mx/images/product-images/img_small/980025816s.jpg",
       "price": "250000",
       "id": 8,
       "reference": "#GM004",
